@@ -1,9 +1,17 @@
 import './MoviePoster.css';
 
-function MoviePoster() {
+
+function MoviePoster({ moviePosters }) {
+  console.log(moviePosters)
+  console.log(moviePosters[0])
   return (
     <section className='MoviePoster'>
-      <p>This is a movie poster.</p>
+      {moviePosters.map((movie, index) => (
+        <div className='poster' key = {index}>
+          <img className="image-path" src={movie.poster_path}></img>
+          <div className="poster-count">{movie.vote_count}</div>
+        </div>
+      ))}
     </section>
   );
 }
