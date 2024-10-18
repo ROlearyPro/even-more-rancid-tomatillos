@@ -33,7 +33,12 @@ console.log(moviePosters)
 
 export default App;
 
-// As a user, I should also see a “Rancid Tomatillos” title on the page.
-// As a user, when I visit the app, all movies should be displayed. For each movie, I should see:
-// the movie poster
-// the number of votes (you don’t need to include the arrow buttons yet)
+// User Stories
+
+// As a user, I should see a button for upvoting and downvoting on each movie card
+// When I click the up arrow…
+// The data should be updated so that the movie I clicked on has one more vote (state AND the mock data!).
+// I should see the vote increase by one on the movie card.
+// When I click the down arrow…
+// The data should be updated so that the movie I clicked on has one less vote (state AND the mock data!).
+// I should see the vote decrease by one on the movie card.

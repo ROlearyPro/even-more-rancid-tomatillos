@@ -1,4 +1,3 @@
-// import moviePosters from '../data/movie_posters';
 import './MoviesContainer.css';
 import moviePosters from '../data/movie_posters';
 

@@ -1,64 +1,83 @@
 * {
     margin: 0;
     padding: 0;
-    }
-  
-  body {
+}
+
+body {
     background-color: #3e49b1;
-  }
-  
-  header {
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
-  }
-  
-  h1 {
+}
+
+h1 {
     color: white;
     font-size: 56px;
     letter-spacing: 5px;
-  }
-  
-  p {
+}
+
+p {
     font-size: 20px;
     text-align: center;
     margin-top: 50px;
     color: white;
-  }
-  img{
+}
+
+img {
     display: flex;
     max-width: 230px;
     max-height: auto;
     outline: black 2px solid;
-    border-radius:30px;
-    margin:5px;
-  }
+    border-radius: 30px;
+    margin: 5px;
+}
 
-  .poster {
-    display:flex;
+.poster {
+    display: flex;
     flex-wrap: wrap;
     padding: 15px;
     border-radius: 25px;
     border-color: white;
     border-style: solid;
-    margin:10px;
+    margin: 10px;
     flex-direction: column;
     background-color: white;
-  }
-  .MoviePoster{
-    display:flex;
+}
+
+.voting {
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.poster .upvote-path {
+    width: 30px;
+    height: 30px;
+}
+
+.poster .downvote-path {
+    width: 30px;
+    height: 30px;
+}
+
+.MoviePoster {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-between;
     flex-direction: row;
-    
 
-  }
-  
-  .poster-count{
+
+}
+
+.poster-count {
     display: flex;
     justify-content: center;
     background-color: white;
     margin-top: 10 px;
-  }
+}

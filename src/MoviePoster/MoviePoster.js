@@ -1,15 +1,38 @@
 import './MoviePoster.css';
-
+import upvoteImg from '../icons/upvote.png'
+import downvoteImg from '../icons/downvote.png'
+import { useState, useEffect } from 'react';
 
 function MoviePoster({ moviePosters }) {
-  console.log(moviePosters)
-  console.log(moviePosters[0])
+  
+  const [posterList, setPosterList] = useState(moviePosters);
+
+  function upvoteMovie(movie){
+    const changedScore = [...posterList];
+    changedScore.filter((film)=> film.id===movie.id)[0].vote_count+=1
+    setPosterList(changedScore);
+  }
+
+  function downvoteMovie(movie){
+    const changedScore = [...posterList];
+    changedScore.filter((film)=> film.id===movie.id)[0].vote_count-=1
+    setPosterList(changedScore);
+    console.log(movie)
+  }
+  useEffect(()=>{
+
+  },[posterList])
+  
   return (
     <section className='MoviePoster'>
-      {moviePosters.map((movie, index) => (
-        <div className='poster' key = {index}>
+      {posterList.map((movie, index) => (
+        <div className='poster' key={index}>
           <img className="image-path" src={movie.poster_path}></img>
-          <div className="poster-count">{movie.vote_count}</div>
+          <div className='voting'>
+            <img className="upvote-path" src={upvoteImg} onClick={()=>(upvoteMovie(movie))}></img>
+            <div className="poster-count">{posterList[index].vote_count}</div>
+            <img className="downvote-path" src={downvoteImg} onClick={()=>(downvoteMovie(movie))}></img>
+          </div> 
         </div>
       ))}
     </section>
