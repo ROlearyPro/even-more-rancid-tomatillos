@@ -1,5 +1,7 @@
 import './App.css';
 
+import homeImg from '../icons/home.png'
+
 import searchIcon from '../icons/search.png';
 import { useState, useEffect } from 'react';
 import moviePosters from '../data/movie_posters';
@@ -16,6 +18,10 @@ function App() {
   const handleSelectMovie = () => {
     setSelectedMovie(movieDetails)
   }
+
+  const onHomeClick = () => {
+    setSelectedMovie(null)
+  }
   function protoFetch(){
     //something that we'll use to fetch
   }
@@ -29,9 +35,12 @@ console.log(moviePosters)
     <main className='App'>
       <header>
         <h1>rancid tomatillos</h1>
+        {selectedMovie && (<img className='home-button' onClick={onHomeClick} src={homeImg} alt="Return Home" />
+        )}
       </header>
       <div>
-        {selectedMovie ? ( <MovieDetails movie={selectedMovie} />) : (<MoviesContainer MoviePoster={MoviePoster} onSelectMovie={handleSelectMovie}/>)}
+        {selectedMovie ? ( <MovieDetails movie={selectedMovie} onHomeClick={onHomeClick}/>) 
+        : (<MoviesContainer MoviePoster={MoviePoster} onSelectMovie={handleSelectMovie}/>)}
       </div>
     </main>
   );

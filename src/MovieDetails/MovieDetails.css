@@ -47,3 +47,8 @@
   width: 800px;
   margin: auto;
 }
+
+.home-button {
+  cursor: pointer;
+  margin-top: 20px;
+}

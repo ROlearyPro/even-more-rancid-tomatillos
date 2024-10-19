@@ -11,6 +11,7 @@ function MovieDetails({ movie }) {
         ))}
         </div>
       <p className='details-overview'>{movie.overview}</p>
+
     </section>
   );
 }
