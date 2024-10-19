@@ -27,7 +27,7 @@ function MoviePoster({ moviePosters }) {
     <section className='MoviePoster'>
       {posterList.map((movie, index) => (
         <div className='poster' key={index}>
-          <img className="image-path" src={movie.poster_path}></img>
+          <img className="image-path" src={movie.poster_path} onClick={()=>(onSelectMovie(movie))}></img>
           <div className='voting'>
             <img className="upvote-path" src={upvoteImg} onClick={()=>(upvoteMovie(movie))}></img>
             <div className="poster-count">{posterList[index].vote_count}</div>
