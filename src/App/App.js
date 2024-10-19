@@ -6,13 +6,16 @@ import moviePosters from '../data/movie_posters';
 import movieDetails from '../data/movie_details';
 import MoviesContainer from '../MoviesContainer/MoviesContainer';
 import MoviePoster from '../MoviePoster/MoviePoster';
-
+import MovieDetails from '../MovieDetails/MovieDetails';
 
 function App() {
 
   const [containerState, setContainerState] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
 
+  const handleSelectMovie = () => {
+    setSelectedMovie(movieDetails)
+  }
   function protoFetch(){
     //something that we'll use to fetch
   }
@@ -27,7 +30,9 @@ console.log(moviePosters)
       <header>
         <h1>rancid tomatillos</h1>
       </header>
-      <div><MoviesContainer MoviePoster={MoviePoster} onSelectMovie={setSelectedMovie}/></div>
+      <div>
+        {selectedMovie ? ( <MovieDetails movie={selectedMovie} />) : (<MoviesContainer MoviePoster={MoviePoster} onSelectMovie={handleSelectMovie}/>)}
+      </div>
     </main>
   );
 }

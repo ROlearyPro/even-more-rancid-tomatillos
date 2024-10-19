@@ -3,7 +3,7 @@ import upvoteImg from '../icons/upvote.png'
 import downvoteImg from '../icons/downvote.png'
 import { useState, useEffect } from 'react';
 
-function MoviePoster({ moviePosters }) {
+function MoviePoster({ moviePosters, onSelectMovie  }) {
   
   const [posterList, setPosterList] = useState(moviePosters);
 
