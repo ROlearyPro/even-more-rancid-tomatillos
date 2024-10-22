@@ -20,7 +20,7 @@ function App() {
   // }
 
   let PosterData = [];
-  
+
   const onHomeClick = () => {
     setSelectedMovie(null)
   }
@@ -37,14 +37,15 @@ function App() {
       })
       .then(data => {
         setListOfMovies(data);
-        console.log(data);})
+        console.log(data);
+      })
       .catch(err => {
         console.error(err);
       })
   }
 
   useEffect(() => {    //something that we're going to call during the mounting 
-  fetchMovies();
+    fetchMovies();
   }, [])
 
   return (
@@ -57,7 +58,7 @@ function App() {
       </header>
       <div>
         {
-          selectedMovie ? (<MovieDetails movie={selectedMovie} onHomeClick={onHomeClick} />) : (<MoviesContainer MoviePoster={MoviePoster} listOfMovies={listOfMovies} setSelectedMovie={setSelectedMovie} />)
+          selectedMovie ? (<MovieDetails movie={selectedMovie} onHomeClick={onHomeClick} />) : (<MoviesContainer MoviePoster={MoviePoster} listOfMovies={listOfMovies} setListOfMovies={setListOfMovies} fetchMovies={fetchMovies} setSelectedMovie={setSelectedMovie} />)
         }
       </div>
     </main>
