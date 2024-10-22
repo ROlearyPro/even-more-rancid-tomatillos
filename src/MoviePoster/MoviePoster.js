@@ -3,9 +3,9 @@ import upvoteImg from '../icons/upvote.png'
 import downvoteImg from '../icons/downvote.png'
 import { useState, useEffect } from 'react';
 
-function MoviePoster({ moviePosters, onSelectMovie  }) {
+function MoviePoster({ listOfMovies, onSelectMovie  }) {
   
-  const [posterList, setPosterList] = useState(moviePosters);
+  const [posterList, setPosterList] = useState(listOfMovies);
 
   function upvoteMovie(movie){
     const changedScore = [...posterList];
@@ -20,9 +20,10 @@ function MoviePoster({ moviePosters, onSelectMovie  }) {
     console.log(movie)
   }
   useEffect(()=>{
-
-  },[posterList])
-  
+    setPosterList(listOfMovies);
+    console.log("Not recursive?")
+  })
+  console.log(posterList)
   return (
     <section className='MoviePoster'>
       {posterList.map((movie, index) => (
