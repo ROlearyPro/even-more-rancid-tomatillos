@@ -25,7 +25,6 @@ function App() {
     setSelectedMovie(null)
   }
   function fetchMovies() {
-    //something that we'll use to fetch from https://rancid-tomatillos-api-cc6f59111a05.herokuapp.com/
     fetch('https://rancid-tomatillos-api-cc6f59111a05.herokuapp.com/api/v1/movies')
       .then(res => {
         if (!res.ok) {
