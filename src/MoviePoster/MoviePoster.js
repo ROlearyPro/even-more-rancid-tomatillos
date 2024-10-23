@@ -59,12 +59,12 @@ function MoviePoster({ listOfMovies, setListOfMovies, fetchMovies, setSelectedMo
   return (
     <section className='MoviePoster'>
       {posterList.map((movie, index) => (
-        <div className='poster' key={index}>
-          <img className="image-path" src={movie.poster_path} onClick={() => (setSelectedMovie(movie))}></img>
-          <div className='voting'>
-            <img className="upvote-path" src={upvoteImg} onClick={() => (upVoteFetch(movie.id))}></img>
-            <div className="poster-count">{posterList[index].vote_count}</div>
-            <img className="downvote-path" src={downvoteImg} onClick={() => (downVoteFetch(movie.id))}></img>
+        <div className='poster' key={index} data-cy='poster-container'>
+          <img className="image-path" src={movie.poster_path} onClick={() => (setSelectedMovie(movie))} data-cy="poster-image"></img>
+          <div className='voting' data-cy='voting-container'>
+            <img className="upvote-path" src={upvoteImg} onClick={() => (upVoteFetch(movie.id))} data-cy='upvote'></img>
+            <div className="poster-count" data-cy='vote-count'>{posterList[index].vote_count}</div>
+            <img className="downvote-path" src={downvoteImg} onClick={() => (downVoteFetch(movie.id))} data-cy='downvote'></img>
           </div>
         </div>
       ))}
