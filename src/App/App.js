@@ -6,6 +6,7 @@ import searchIcon from "../icons/search.png";
 import { useState, useEffect } from "react";
 import MoviesContainer from "../MoviesContainer/MoviesContainer";
 import MoviePoster from "../MoviePoster/MoviePoster";
+import ErrorPage from "../ErrorPage/Errorpage";
 import MovieDetails from "../MovieDetails/MovieDetails";
 
 function App() {
@@ -90,7 +91,8 @@ function App() {
           }
         />
         <Route path="/:movieId" element={<MovieDetails />}></Route>
-        {/* <Route path="/error/:code"></Route> */}
+        <Route path='/error/:code' element={<ErrorPage />}></Route>
+        <Route path='*' element={<ErrorPage error={404} />}></Route>
 
         {/* Does the Route to movie details also need Link NAVIGATE imported to make it clickable? */}
       </Routes>
