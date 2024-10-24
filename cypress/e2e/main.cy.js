@@ -1,6 +1,5 @@
 // Mock data to use for testing:
 import posters from '../fixtures/movie_posters.json'
-import details from '../fixtures/movie_details.json'
 
 describe('Main Page', () => {
   beforeEach(() => {
