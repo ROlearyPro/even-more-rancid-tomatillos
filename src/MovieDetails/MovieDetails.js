@@ -23,15 +23,15 @@ function MovieDetails({ movie }) {
     console.log('movie: ', movie)
   return (
     <section className='MovieDetails'>
-      <img className='details-poster' src={details.backdrop_path} />
-      <h2 className='details-title'>{details.title}</h2>
-      <div className='details-genres'>
+      <img className='details-poster' src={details.backdrop_path} data-cy="poster-image"/>
+      <h2 className='details-title' data-cy="poster-title">{details.title}</h2>
+      <div className='details-genres' data-cy="poster-genres">
         { 
         genres.map((genre, index) => (
           <span key={index} className='genre-button'>{genre}</span>
         ))}
       </div>
-      <p className='details-overview'>{details.overview}</p>
+      <p className='details-overview' data-cy="poster-overview">{details.overview}</p>
     </section>
   );
 

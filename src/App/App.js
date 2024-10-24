@@ -52,7 +52,7 @@ function App() {
       <header>
         <h1>rancid tomatillos</h1>
         {
-          selectedMovie && (<img className='home-button' onClick={onHomeClick} src={homeImg} alt="Return Home" />)
+          selectedMovie && (<img className='home-button' onClick={onHomeClick} src={homeImg} alt="Return Home" data-cy="home-button"/>)
         }
       </header>
       <div>
