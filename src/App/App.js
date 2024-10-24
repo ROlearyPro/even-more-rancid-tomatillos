@@ -16,7 +16,7 @@ function App() {
 
   const navigate = useNavigate();
 
-  const {movieId} = useParams();
+  const { movieId } = useParams()
 
   let PosterData = [];
 
@@ -45,11 +45,7 @@ function App() {
   }
 
   function renderDetails() {
-    return (
-      <Link to={<MovieDetails/>}>
-    
-      </Link>
-    )
+    return <Link to={<MovieDetails />}></Link>;
   }
 
   useEffect(() => {
@@ -76,7 +72,9 @@ function App() {
   return (
     <main className="App">
       <header>
-        <h1>rancid tomatillos</h1>
+      <Link to={`/`}>
+      <h1>rancid tomatillos</h1></Link>
+        
       </header>
       <Routes>
         <Route
@@ -91,12 +89,8 @@ function App() {
             />
           }
         />
-        <Route
-          path="/:movieId"
-          element={<MovieDetails/>
-        }
-        ></Route>
-        <Route path='/error/:code' ></Route>
+        <Route path="/:movieId" element={<MovieDetails />}></Route>
+        {/* <Route path="/error/:code"></Route> */}
 
         {/* Does the Route to movie details also need Link NAVIGATE imported to make it clickable? */}
       </Routes>

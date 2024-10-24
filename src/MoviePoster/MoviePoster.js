@@ -72,7 +72,7 @@ function MoviePoster({
     <section className="MoviePoster">
       {posterList.map((movie, index) => (
         <div className="poster" key={index} data-cy="poster-container">
-          <Link to={`/:${movie.id}`}>
+          <Link to={`/${movie.id}`}>
             <img
               className="image-path"
               src={movie.poster_path}

@@ -6,6 +6,9 @@ function MovieDetails({}) {
   const [details, setDetails] = useState([]);
   const [genres, setGenres] = useState([]);
   const movieIDVal = useParams().movieId;
+  console.log(useParams());
+  console.log('movieIDVal ', movieIDVal);
+
   useEffect(() => {
     fetch(
       "https://rancid-tomatillos-api-cc6f59111a05.herokuapp.com/api/v1/movies/" +
@@ -21,7 +24,6 @@ function MovieDetails({}) {
   }, []);
   // using details.genre_ids => tries to map over a nonexistant array; error
   // using genres => tries to map over an EXISTANT but empty array; That's alright: just shows nothing until setGenres is called, at which point it maps over that data
-  console.log(useParams().movieId);
 
   return (
     <section className="MovieDetails">
