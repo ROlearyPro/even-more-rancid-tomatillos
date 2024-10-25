@@ -1,6 +1,6 @@
 import "./MovieDetails.css";
 import { useState, useEffect } from "react";
-import { Routes, Route, Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function MovieDetails({ }) {
   const [details, setDetails] = useState([]);
@@ -35,8 +35,6 @@ function MovieDetails({ }) {
       });
 
   }, []);
-  // using details.genre_ids => tries to map over a nonexistant array; error
-  // using genres => tries to map over an EXISTANT but empty array; That's alright: just shows nothing until setGenres is called, at which point it maps over that data
 
   return (
     <section className="MovieDetails">

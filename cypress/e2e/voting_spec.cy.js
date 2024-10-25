@@ -19,7 +19,6 @@ describe('Voting System', () => {
 
     cy.get('[data-cy="upvote"]').first().click()
     cy.wait('@upvoteMovie').its('response.statusCode').should('eq', 200);
-    // cy.get('[data-cy="vote-count"]').first().should('have.text', 100);
 
     cy.intercept('PATCH', 'https://rancid-tomatillos-api-cc6f59111a05.herokuapp.com/api/v1/movies/155', {
       statusCode: 200,

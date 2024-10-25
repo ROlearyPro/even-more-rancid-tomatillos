@@ -8,7 +8,6 @@ describe('Main Page', () => {
       fixture: 'movie_posters'
     })
     cy.visit('http://localhost:3000/')
-    // use this every time I need localhost 3000
   });
   it('displays title on page load', () => {
     cy.get('h1').contains('rancid tomatillos')
@@ -34,6 +33,3 @@ describe('Main Page', () => {
       })
   });
 })
-// Check 1st and last cards(by index)
-
-// sad paths to consider 404(wrong id not found) and 500 errors

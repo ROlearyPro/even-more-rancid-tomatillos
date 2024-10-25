@@ -13,17 +13,6 @@ function MoviePoster({
 }) {
   const [posterList, setPosterList] = useState(listOfMovies);
 
-  // function upvoteMovie(movie) {
-  //   const changedScore = [...posterList];
-  //   changedScore.filter((film) => film.id === movie.id)[0].vote_count += 1
-  //   setPosterList(changedScore);
-  // }
-
-  // function downvoteMovie(movie) {
-  //   const changedScore = [...posterList];
-  //   changedScore.filter((film) => film.id === movie.id)[0].vote_count -= 1
-  //   setPosterList(changedScore);
-  // }
   useEffect(() => {
     setPosterList(listOfMovies);
   }, [listOfMovies]);
@@ -76,7 +65,6 @@ function MoviePoster({
             <img
               className="image-path"
               src={movie.poster_path}
-              // onClick={() => (setSelectedMovie(movie))}
               data-cy="poster-image"
             ></img>
           </Link>
