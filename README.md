@@ -148,6 +148,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Contributors:
 
+- [GH Insights](https://github.com/ROlearyPro/even-more-rancid-tomatillos/graphs/contributors)
+
 - [Ryan O'Leary](https://www.linkedin.com/in/ryan-o-leary-6a963b211/)
 
 - [Stefan Bloom](https://www.linkedin.com/in/stefanjbloom/)
