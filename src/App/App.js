@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Routes, Route, Link, useNavigate, useParams } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import MoviesContainer from "../MoviesContainer/MoviesContainer";
 import MoviePoster from "../MoviePoster/MoviePoster";
@@ -10,11 +10,7 @@ import MovieDetails from "../MovieDetails/MovieDetails";
 function App() {
   const [listOfMovies, setListOfMovies] = useState([]);
 
-  const [selectedMovie, setSelectedMovie] = useState(null);
-
-  const navigate = useNavigate();
-
-  const { movieId } = useParams();
+  const [ setSelectedMovie] = useState(null);
 
   function fetchMovies() {
     fetch(
@@ -37,13 +33,13 @@ function App() {
       });
   }
 
-  function renderDetails() {
-    return <Link to={<MovieDetails />}></Link>;
-  }
-
   useEffect(() => {
     fetchMovies();
   }, []);
+
+  function renderDetails() {
+    return <Link to={<MovieDetails />}></Link>;
+  }
 
   return (
     <main className="App">
@@ -69,7 +65,8 @@ function App() {
         <Route path="/error/:code" element={<ErrorPage />}></Route>
         <Route path="*" element={<ErrorPage error={404} />}></Route>
         <Route
-          exact path="/even-more-rancid-tomatillos/"
+          exact
+          path="/even-more-rancid-tomatillos/"
           render={() => <navigate to="/" />}
         ></Route>
       </Routes>
