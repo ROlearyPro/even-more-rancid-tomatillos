@@ -1,0 +1,57 @@
+.MovieDetails {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  max-width: fit-content;
+  margin: auto;
+  background-color: rgb(105, 189, 245);
+  padding: .25%;
+  align-items: center;
+}
+
+.details-poster {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  max-height: 8000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5px;
+
+}
+
+.details-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.details-genres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.genre-button {
+  text-decoration: none;
+  background-color: lightblue;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 5px;
+  transition: background-color 0.3s;}
+
+.details-overview {
+  color: black;
+  width: 800px;
+  margin: auto;
+}
+
+.home-button {
+  cursor: pointer;
+  margin-top: 20px;
+}

@@ -4,20 +4,25 @@
   }
 
 body {
-  background-color: #3e49b1;
+  background-image: "https://img.freepik.com/free-vector/3d-film-strips-with-light-effect-background_1017-36683.jpg?t=st=1729964881~exp=1729968481~hmac=63408ba9c9427813371529d17687984e0526058dd1fb3606f87639b12f52023e&w=2000";
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 35px;
+  letter-spacing: 40px;
+  font-family: Impact, 'Arial Bold', sans-serif;
 }
 
-h1 {
-  color: white;
+
+h1, a{
+  color: rgb(207, 115, 29);
   font-size: 56px;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
+  font-weight: 800;
+  font-family:  "Machine Bold", "Impact",  sans-serif;
 }
 
 p {
