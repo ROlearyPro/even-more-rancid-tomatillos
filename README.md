@@ -27,7 +27,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ROlearyPro/even-more-rancid-tomatillos">
+  <a href="https://rolearypro.github.io/even-more-rancid-tomatillos/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -62,7 +62,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -77,7 +76,6 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,6 +125,8 @@ This is an example of how to list things you need to use the software and how to
 ## Usage
 
 Users can view images of movie posters and interact with them by casting a vote in favor or dislike of that movie.  Upon clicking a movie's poster, the user can then view the title, genres and summary of the film.  
+
+[Deployed Project](https://rolearypro.github.io/even-more-rancid-tomatillos/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
