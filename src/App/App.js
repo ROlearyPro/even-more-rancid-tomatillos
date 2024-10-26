@@ -8,20 +8,14 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import MovieDetails from "../MovieDetails/MovieDetails";
 
 function App() {
-  const [containerState, setContainerState] = useState([]);
   const [listOfMovies, setListOfMovies] = useState([]);
 
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const navigate = useNavigate();
 
-  const { movieId } = useParams()
+  const { movieId } = useParams();
 
-  let PosterData = [];
-
-  const onHomeClick = () => {
-    setSelectedMovie(null);
-  };
   function fetchMovies() {
     fetch(
       "https://rancid-tomatillos-api-cc6f59111a05.herokuapp.com/api/v1/movies"
@@ -54,9 +48,9 @@ function App() {
   return (
     <main className="App">
       <header>
-      <Link to={`/`}>
-      <h1 data-cy="home-button">RANCID TOMATILLOS</h1></Link>
-        
+        <Link to={`/`}>
+          <h1 data-cy="home-button">RANCID TOMATILLOS</h1>
+        </Link>
       </header>
       <Routes>
         <Route
@@ -72,8 +66,12 @@ function App() {
           }
         />
         <Route path="/:movieId" element={<MovieDetails />}></Route>
-        <Route path='/error/:code' element={<ErrorPage />}></Route>
-        <Route path='*' element={<ErrorPage error={404} />}></Route>
+        <Route path="/error/:code" element={<ErrorPage />}></Route>
+        <Route path="*" element={<ErrorPage error={404} />}></Route>
+        <Route
+          exact path="/even-more-rancid-tomatillos/"
+          render={() => <navigate to="/" />}
+        ></Route>
       </Routes>
     </main>
   );
