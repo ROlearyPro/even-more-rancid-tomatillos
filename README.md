@@ -19,7 +19,8 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]][contributors-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn - Stefan][linkedin-shield]][linkedin-url]
+[![LinkedIn - Ryan][linkedin-shield]][linkedin-url-2]
 
 
 
@@ -85,7 +86,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Github](www.github.com)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,9 +93,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -129,9 +126,8 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Users can view images of movie posters and interact with them by casting a vote in favor or dislike of that movie.  Upon clicking a movie's poster, the user can then view the title, genres and summary of the film.  
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,7 +184,8 @@ Project Link: [https://github.com/ROlearyPro/even-more-rancid-tomatillos](https:
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/ROlearyPro/even-more-rancid-tomatillos/graphs/contributors
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://www.linkedin.com/in/stefanjbloom/
+[linkedin-url-2]: https://www.linkedin.com/in/ryan-o-leary-6a963b211/
 [product-screenshot]: images/screenshot.jpeg
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
