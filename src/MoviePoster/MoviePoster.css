@@ -4,6 +4,7 @@
 }
 
 body {
+    background-image: url(https://img.freepik.com/free-vector/3d-film-strips-with-light-effect-background_1017-36683.jpg?t=st=1729964881~exp=1729968481~hmac=63408ba9c9427813371529d17687984e0526058dd1fb3606f87639b12f52023e&w=2000);
     background-color: #3e49b1;
 }
 
@@ -12,12 +13,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 25px;
-}
-
-h1 {
-    color: white;
-    font-size: 56px;
-    letter-spacing: 5px;
 }
 
 p {
@@ -41,11 +36,23 @@ img {
     flex-wrap: wrap;
     padding: 15px;
     border-radius: 25px;
-    border-color: white;
+    border-color:  #3d49b0;
     border-style: solid;
     margin: 10px;
     flex-direction: column;
-    background-color: white;
+    background-color:  #3d49b0;
+}
+.image-path{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+
+}
+.image-path:hover {
+	-webkit-transform: scale(1.08);
+	transform: scale(1.08);
+    
 }
 
 .voting {
@@ -59,11 +66,35 @@ img {
 .poster .upvote-path {
     width: 30px;
     height: 30px;
+    background-color: white;
+    cursor:pointer;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+    
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.poster .upvote-path:hover{
+    -webkit-transform: rotate(359deg) scale(1);
+    transform: rotate(359deg) scale(1);
+
 }
 
 .poster .downvote-path {
     width: 30px;
     height: 30px;
+    background-color: white;
+    cursor: pointer;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+    
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.poster .downvote-path:hover{
+    -webkit-transform: rotate(359deg) scale(1);
+    transform: rotate(359deg) scale(1);
+
 }
 
 .MoviePoster {
@@ -78,6 +109,6 @@ img {
 .poster-count {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color:  #3d49b0;
     margin-top: 10 px;
 }

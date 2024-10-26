@@ -55,7 +55,7 @@ function App() {
     <main className="App">
       <header>
       <Link to={`/`}>
-      <h1>rancid tomatillos</h1></Link>
+      <h1 data-cy="home-button">RANCID TOMATILLOS</h1></Link>
         
       </header>
       <Routes>

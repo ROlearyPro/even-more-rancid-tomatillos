@@ -8,7 +8,7 @@ describe('Voting System', () => {
     cy.wait('@loadPage')
   });
 
-  it('upvote and downvote buttons working', () => {
+  it('upvote button working', () => {
     cy.intercept('PATCH', 'https://rancid-tomatillos-api-cc6f59111a05.herokuapp.com/api/v1/movies/155', {
       statusCode: 200,
       body: { vote_count: 100},
@@ -20,6 +20,9 @@ describe('Voting System', () => {
     cy.get('[data-cy="upvote"]').first().click()
     cy.wait('@upvoteMovie').its('response.statusCode').should('eq', 200);
 
+  })
+
+  it('downvote button working', () => {
     cy.intercept('PATCH', 'https://rancid-tomatillos-api-cc6f59111a05.herokuapp.com/api/v1/movies/155', {
       statusCode: 200,
       body: { vote_count: 98}

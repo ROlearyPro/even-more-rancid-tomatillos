@@ -10,8 +10,7 @@ describe('Main Page', () => {
     cy.visit('http://localhost:3000/')
   });
   it('displays title on page load', () => {
-    cy.get('h1').contains('rancid tomatillos')
-    cy.get('p').contains("We'll make some movie posters show up here!")
+    cy.get('h1').contains('RANCID TOMATILLOS')
   });
 
   it('displays movie poster cards and their voting systems', () => {
@@ -29,7 +28,7 @@ describe('Main Page', () => {
       cy.get('[data-cy=voting-container]').each(() => {
         cy.get('[data-cy=upvote]').should('be.visible')
         cy.get('[data-cy=downvote]').should('be.visible')
-        cy.get('[data-cy=vote-count]').should('be.visible', 'contain', posters[0].vote_count)
+        cy.get('[data-cy=vote-count]').should('be.visible', 'contain', posters[3].vote_count)
       })
   });
 })

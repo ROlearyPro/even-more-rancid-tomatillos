@@ -1,11 +1,12 @@
 .MovieDetails {
   display: flex;
   flex-direction: column;
-  background-color: white;
   border-radius: 5%;
   max-width: fit-content;
   margin: auto;
+  background-color: rgb(105, 189, 245);
   padding: .25%;
+  align-items: center;
 }
 
 .details-poster {
@@ -16,12 +17,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5px;
+
 }
 
 .details-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   color: black;
 }
 
