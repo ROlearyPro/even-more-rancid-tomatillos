@@ -111,7 +111,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Navigate to [https://github.com/ROlearyPro/even-more-rancid-tomatillos](https://github.com/ROlearyPro/even-more-rancid-tomatillos)
+1. Navigate to [even-more-rancid-tomatillos](https://github.com/ROlearyPro/even-more-rancid-tomatillos)
 2. Clone the repo
    ```sh
    git clone SSH git@github.com:ROlearyPro/even-more-rancid-tomatillos.git
@@ -154,13 +154,10 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Top contributors:
+### Contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
-</a>
-
-
+[Ryan O'Leary](https://www.linkedin.com/in/ryan-o-leary-6a963b211/)
+[Stefan Bloom](https://www.linkedin.com/in/stefanjbloom/)
 
 <!-- LICENSE -->
 ## License
@@ -194,15 +191,7 @@ Project Link: [https://github.com/ROlearyPro/even-more-rancid-tomatillos](https:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-url]: https://github.com/ROlearyPro/even-more-rancid-tomatillos/graphs/contributors
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.jpeg
